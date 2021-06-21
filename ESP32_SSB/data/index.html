@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>Radio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="fonction.js" type="text/javascript"></script>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.rotaryswitch.js" type="text/javascript"></script>
+    <link href="jquery.rotaryswitch.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div>
+        <div class="entete">
+            <!--<img id="ref" src="/ref.png" >-->
+            <div class="freq">
+                
+                <label id="frequence">10.100</label>
+                <label>MHz</label>
+            </div>
+            <div id="info">
+                &nbsp;&nbsp;[SNR:&nbsp;<label id="snr">12</label>&nbsp;dB Snignal:&nbsp;
+                <label id="rssi">12</label>&nbsp;dBuV]
+                <label id="agcText">AGC&nbsp;ON</label>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="63" value="35" class="slider" id="RangeV">
+            </div>
+        </div>
+        <div id=''>
+            <div id='mode' class="selectcontainer">
+                MODE
+                </br>
+                <select id="selectMode" onchange="mode()">
+                    <option value="lsb">LSB</option>
+                    <option value="usb" selected>USB</option>
+                </select>
+            </div>
+
+            <div id='band' class="selectcontainer">
+                HAM
+                </br>
+                <select id="selectBand" onchange="ham()">
+                    <option value='0'>630m</option>
+                    <option value='1'>160m</option>
+                    <option value='2'>80m</option>
+                    <option value='3'>60m</option>
+                    <option value='4'>40m</option>
+                    <option value='5' selected>30m</option>
+                    <option value='6'>20m</option>
+                    <option value='7'>17m</option>
+                    <option value='8'>15m</option>
+                    <option value='9'>12m</option>
+                    <option value='10'>10m</option>
+                </select>
+            </div>
+            <div id='filtre' class="selectcontainer">
+                BANDW
+                </br>
+                <select id="selectFiltre" onchange="bandwidth()">
+                    <option value='4'>0.5</option>
+                    <option value='5'>1.0</option>
+                    <option value='0' selected>1.2</option>
+                    <option value='1'>2.2</option>
+                    <option value='2'>3.0</option>
+                    <option value='3'>4.0</option>
+                </select>
+            </div>
+        </div>
+        <div id="ongletFreq" class="tabcontent">
+            <label></label>
+            <select id="stepFreq">
+                <option value="1" disabled="selected" selected>STEP-FREQ</option>
+                <option value='1'>1</option>
+                <option value='5'>5</option>
+                <option value='10'>10</option>
+                <option value='25'>25</option>
+            </select>
+            <input type="text" class="rotarySwitch" value="0">
+            <button onclick="freqButton()" id="freq">FREQ</button>
+        </div>
+
+        <div id="ongletBfo" class="tabcontent">
+            <label id="bfo">0</label>
+            <select id="stepBfo">
+                <option value="1" disabled="selected" selected>STEP-BFO</option>
+                <option value='1'>1</option>
+                <option value='5'>5</option>
+                <option value='10'>10</option>
+                <option value='25'>25</option>
+            </select>
+            <input type="text" class="rotarySwitch2" value="0">
+            <button onclick="zero()" id="zero">Reset</button>
+        </div>
+
+        <div id="agcOnglet" class="tabcontent">
+            <div id="agc">
+                <input type="checkbox" id="scales" name="scales" onchange="agc()">
+                <label for="scales">AGC</label>
+            </div>
+        </div>
+
+        <div id="ongletapropos" class="tabcontent">
+            <img id=refApropos src="/ref.png">
+            <p id="apropos">Radio-club F6KFI</p>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openMenu(event, 'ongletFreq')" id="defaultOpen">FREQ</button>
+            <button class="tablinks" onclick="openMenu(event, 'ongletBfo')">BFO</button>
+            <button class="tablinks" onclick="openMenu(event, 'agcOnglet')">AGC</button>
+            <button class="tablinks" onclick="openMenu(event, 'ongletapropos')">A propos</button>
+        </div>
+    </div>
+    <script>
+
+        document.getElementById("scales").click();
+        document.getElementById("defaultOpen").click();
+        mode();
+
+        $(function () {
+            $('.rotarySwitch').rotaryswitch({ themeClass: 'small', showMarks: true, unit: 'freq' });
+            $('.rotarySwitch2').rotaryswitch({ themeClass: 'small', showMarks: true, unit: 'bfo' });
+        });
+
+        var sliderV = document.getElementById("RangeV");
+        sliderV.oninput = function () {
+            var volume = sliderV.value;
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "volume", true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.send('volume=' + volume);
+        };
+
+    </script>
+</body>
+
+</html>
