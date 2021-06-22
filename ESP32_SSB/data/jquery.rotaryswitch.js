@@ -422,8 +422,6 @@ limitations under the License.
 		},
 
 		setFreq: function () {
-			var val;
-			if (val == 1 || val == null) {
 				var nb = this.options.maximum - 1
 				if (this.options.unit === 'freq') {
 					if (this.value !== this.lastTriggeredValue) {
@@ -459,7 +457,6 @@ limitations under the License.
 						}
 					}
 				}
-			}
 		},
 
 	};
