@@ -30,7 +30,7 @@ limitations under the License.
 			showInput: false, // Show input element
 			showMarks: true, // Show deg marks
 			themeClass: 'defaultTheme', // Theme class
-			
+
 			unit: 'freq', //ajout d'une option pour avoir freq et bof
 		};
 
@@ -422,40 +422,42 @@ limitations under the License.
 		},
 
 		setFreq: function () {
-			var nb = this.options.maximum - 1
-			if (this.options.unit === 'freq') {
-				if (this.value !== this.lastTriggeredValue) {
-					if (this.value > this.lastTriggeredValue) {
-						if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
-							downFreq();
-						} else {
-							upFreq();
-						}
-					} else if (this.value < this.lastTriggeredValue) {
-						if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
-							upFreq();
-						} else {
-							downFreq();
-						}
-					}
-
-				}
-			} else if (this.options.unit === 'bfo') {
-				if (this.value !== this.lastTriggeredValue) {
-					if (this.value > this.lastTriggeredValue) {
-						if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
-							downBfo();
-						} else {
-							upBfo();
-						}
-					} else if (this.value < this.lastTriggeredValue) {
-						if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
-							upBfo();
-						} else {
-							downBfo();
+			var val;
+			if (val == 1 || val == null) {
+				var nb = this.options.maximum - 1
+				if (this.options.unit === 'freq') {
+					if (this.value !== this.lastTriggeredValue) {
+						if (this.value > this.lastTriggeredValue) {
+							if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
+								
+								downFreq();
+							} else {
+								upFreq();
+							}
+						} else if (this.value < this.lastTriggeredValue) {
+							if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
+								upFreq();
+							} else {
+								downFreq();
+							}
 						}
 					}
-
+				} else if (this.options.unit === 'bfo') {
+					if (this.value !== this.lastTriggeredValue) {
+						if (this.value > this.lastTriggeredValue) {
+							if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
+								downBfo();
+							} else {
+								upBfo();
+							}
+						} else if (this.value < this.lastTriggeredValue) {
+							if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
+								upBfo();
+							} else {
+								downBfo();
+							}
+						}
+					}
 				}
 			}
 		},
