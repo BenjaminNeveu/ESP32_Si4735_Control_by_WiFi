@@ -4,19 +4,18 @@ function mode() {
     xhr.open("POST", "mode", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send('mode=' + mode);
-    getFrequence();
 }
 
-function getFrequence() {
+function getFrequency() {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function ()
     {
         if (this.readyState == 4 && this.status == 200)
         {
-            document.getElementById("frequence").innerHTML = this.responseText;
+            document.getElementById("frequency").innerHTML = this.responseText;
         }
     };
-    xhr.open("GET", "getFrequence", true);
+    xhr.open("GET", "getFrequency", true);
     xhr.send();
 }
 
@@ -81,67 +80,65 @@ setInterval(function getData() {
 }, 1000);
 
 function freqButton() {
-    var freq = prompt("Fréquence :");
+    var freq = prompt("Frequency :");
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "frequence", true);
+    xhr.open("POST", "frequency", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('frequence=' + freq);
-    getFrequence();
+    xhr.send('frequency=' + freq);
+    getFrequency();
 }
 
 function downFreq() {
-    var step = document.getElementById("stepFreq").value;
+    var stepF = document.getElementById("stepFreq").value;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "downFreq", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('stepF=' + step);
-    getFrequence();
+    xhr.send('stepF=' + stepF);
+    getFrequency();
 }
 
 function upFreq() {
-    var step = document.getElementById("stepFreq").value;
+    var stepF = document.getElementById("stepFreq").value;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "upFreq", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('stepF=' + step);
-    getFrequence();
+    xhr.send('stepF=' + stepF);
+    getFrequency();
 }
 
 function downBfo() {
-    var step = document.getElementById("stepBfo").value;
+    var stepB = document.getElementById("stepBfo").value;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "downBfo", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('stepB=' + step);
+    xhr.send('stepB=' + stepB);
     getBfo();
 }
 
 function upBfo() {
-    var step = document.getElementById("stepBfo").value;
+    var stepB = document.getElementById("stepBfo").value;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "upBfo", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('stepB=' + step);
+    xhr.send('stepB=' + stepB);
     getBfo();
 }
 
-
-
 function bandwidth() {
-    var filtre = document.getElementById("selectFiltre").value;
+    var bandwidth = document.getElementById("selectBandw").value;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "bandwidth", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('filtre=' + filtre);
+    xhr.send('bandwidth=' + bandwidth);
 }
 
 function ham() {
-    var band = document.getElementById("selectBand").value;
+    var ham = document.getElementById("selectHam").value;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "ham", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('band=' + band);
-    getFrequence();
+    xhr.send('ham=' + ham);
+    getFrequency();
 }
 
 function agc() {
@@ -151,7 +148,7 @@ function agc() {
     getAgc();
 }
 
-function zero() {
+function reset() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "reset", true);
     xhr.send();

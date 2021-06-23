@@ -30,8 +30,8 @@ limitations under the License.
 			showInput: false, // Show input element
 			showMarks: true, // Show deg marks
 			themeClass: 'defaultTheme', // Theme class
-
-			unit: 'freq', //ajout d'une option pour avoir freq et bof
+			//personal modification
+			unit: 'freq', //choose the unit to modify
 		};
 
 	function Plugin(element, options) {
@@ -182,7 +182,9 @@ limitations under the License.
 			this.calculateSwitchDeg();
 			this.calculateValueByDeg();
 			this.rotateSwitch();
+			//personal modification
 			this.setFreq();
+			//
 			this.setValueToInput();
 		},
 
@@ -230,7 +232,9 @@ limitations under the License.
 			this.calculateSwitchDeg();
 			this.calculateValueByDeg();
 			this.rotateSwitch();
+			//personal modification
 			this.setFreq();
+			//
 			this.setValueToInput();
 		},
 
@@ -264,7 +268,9 @@ limitations under the License.
 			this.calculateSwitchDeg();
 			this.calculateValueByDeg();
 			this.rotateSwitch();
+			//personal modification
 			this.setFreq();
+			//
 			this.setValueToInput();
 
 
@@ -420,43 +426,45 @@ limitations under the License.
 
 			}
 		},
-
+		
+		//personal modification
+		//This function allows to increment or decrement the freq or the bfo
 		setFreq: function () {
-				var nb = this.options.maximum - 1
-				if (this.options.unit === 'freq') {
-					if (this.value !== this.lastTriggeredValue) {
-						if (this.value > this.lastTriggeredValue) {
-							if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
-								
-								downFreq();
-							} else {
-								upFreq();
-							}
-						} else if (this.value < this.lastTriggeredValue) {
-							if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
-								upFreq();
-							} else {
-								downFreq();
-							}
+			var nb = this.options.maximum - 1
+			if (this.options.unit === 'freq') {
+				if (this.value !== this.lastTriggeredValue) {
+					if (this.value > this.lastTriggeredValue) {
+						if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
+
+							downFreq();
+						} else {
+							upFreq();
 						}
-					}
-				} else if (this.options.unit === 'bfo') {
-					if (this.value !== this.lastTriggeredValue) {
-						if (this.value > this.lastTriggeredValue) {
-							if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
-								downBfo();
-							} else {
-								upBfo();
-							}
-						} else if (this.value < this.lastTriggeredValue) {
-							if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
-								upBfo();
-							} else {
-								downBfo();
-							}
+					} else if (this.value < this.lastTriggeredValue) {
+						if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
+							upFreq();
+						} else {
+							downFreq();
 						}
 					}
 				}
+			} else if (this.options.unit === 'bfo') {
+				if (this.value !== this.lastTriggeredValue) {
+					if (this.value > this.lastTriggeredValue) {
+						if ((this.value == nb) && (this.lastTriggeredValue == 0)) {
+							downBfo();
+						} else {
+							upBfo();
+						}
+					} else if (this.value < this.lastTriggeredValue) {
+						if ((this.value == 0) && (this.lastTriggeredValue == nb)) {
+							upBfo();
+						} else {
+							downBfo();
+						}
+					}
+				}
+			}
 		},
 
 	};

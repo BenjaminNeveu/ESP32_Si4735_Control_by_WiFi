@@ -13,76 +13,74 @@
 
 <body>
     <div>
-        <div class="entete">
-            <!--<img id="ref" src="/ref.png" >-->
-            <div class="freq">
-                
-                <label id="frequence">10.100</label>
-                <label>MHz</label>
-            </div>
-            <div id="info">
-                &nbsp;&nbsp;[SNR:&nbsp;<label id="snr">12</label>&nbsp;dB Snignal:&nbsp;
-                <label id="rssi">12</label>&nbsp;dBuV]
-                <label id="agcText">AGC&nbsp;ON</label>
-            </div>
-            <div class="slidecontainer">
-                <input type="range" min="0" max="63" value="35" class="slider" id="RangeV">
-            </div>
+        <!--Info-->
+        <div class="freq">
+            <label id="frequency">10.100</label>
+            <label>MHz</label>
         </div>
-        <div id=''>
-            <div id='mode' class="selectcontainer">
-                MODE
-                </br>
-                <select id="selectMode" onchange="mode()">
-                    <option value="lsb">LSB</option>
-                    <option value="usb" selected>USB</option>
-                </select>
-            </div>
-
-            <div id='band' class="selectcontainer">
-                HAM
-                </br>
-                <select id="selectBand" onchange="ham()">
-                    <option value='0'>630m</option>
-                    <option value='1'>160m</option>
-                    <option value='2'>80m</option>
-                    <option value='3'>60m</option>
-                    <option value='4'>40m</option>
-                    <option value='5' selected>30m</option>
-                    <option value='6'>20m</option>
-                    <option value='7'>17m</option>
-                    <option value='8'>15m</option>
-                    <option value='9'>12m</option>
-                    <option value='10'>10m</option>
-                </select>
-            </div>
-            <div id='filtre' class="selectcontainer">
-                BANDW
-                </br>
-                <select id="selectFiltre" onchange="bandwidth()">
-                    <option value='4'>0.5</option>
-                    <option value='5'>1.0</option>
-                    <option value='0' selected>1.2</option>
-                    <option value='1'>2.2</option>
-                    <option value='2'>3.0</option>
-                    <option value='3'>4.0</option>
-                </select>
-            </div>
+        <div id="info">
+            &nbsp;&nbsp;[SNR:&nbsp;
+            <label id="snr">12</label>&nbsp;dB Signal:&nbsp;
+            <label id="rssi"></label>&nbsp;dBuV]
+            <label id="agcText"></label>
         </div>
-        <div id="ongletFreq" class="tabcontent">
+        <!--slider volume-->
+        <div class="slidecontainer">
+            <input type="range" min="0" max="63" value="35" class="slider" id="volume">
+        </div>
+        <!--select mode-->
+        <div id='mode' class="selectcontainer">
+            MODE
+            </br>
+            <select id="selectMode" onchange="mode()">
+                <option value="lsb">LSB</option>
+                <option value="usb" selected>USB</option>
+            </select>
+        </div>
+        <!--select ham-->
+        <div id='ham' class="selectcontainer">
+            HAM
+            </br>
+            <select id="selectHam" onchange="ham()">
+                <option value='0'>630m</option>
+                <option value='1'>160m</option>
+                <option value='2'>80m</option>
+                <option value='3'>60m</option>
+                <option value='4'>40m</option>
+                <option value='5' selected>30m</option>
+                <option value='6'>20m</option>
+                <option value='7'>17m</option>
+                <option value='8'>15m</option>
+                <option value='9'>12m</option>
+                <option value='10'>10m</option>
+            </select>
+        </div>
+        <!--select bandwidth-->
+        <div id='bandw' class="selectcontainer">
+            BANDW
+            </br>
+            <select id="selectBandw" onchange="bandwidth()">
+                <option value='4'>0.5</option>
+                <option value='5'>1.0</option>
+                <option value='0' selected>1.2</option>
+                <option value='1'>2.2</option>
+                <option value='2'>3.0</option>
+                <option value='3'>4.0</option>
+            </select>
+        </div>
+        <!--tab Frequency-->
+        <div id="tabFreq" class="tabcontent">
             <label></label>
             <select id="stepFreq">
                 <option value="1" disabled="selected" selected>STEP-FREQ</option>
                 <option value='1'>1</option>
                 <option value='5'>5</option>
-                <option value='10'>10</option>
-                <option value='25'>25</option>
             </select>
             <input type="text" class="rotarySwitch" value="0">
             <button onclick="freqButton()" id="freq">FREQ</button>
         </div>
-
-        <div id="ongletBfo" class="tabcontent">
+        <!--tab BFO-->
+        <div id="tabBfo" class="tabcontent">
             <label id="bfo">0</label>
             <select id="stepBfo">
                 <option value="1" disabled="selected" selected>STEP-BFO</option>
@@ -92,28 +90,31 @@
                 <option value='25'>25</option>
             </select>
             <input type="text" class="rotarySwitch2" value="0">
-            <button onclick="zero()" id="zero">Reset</button>
+            <button onclick="reset()" id="reset">Reset</button>
         </div>
-
-        <div id="agcOnglet" class="tabcontent">
+        <!--tab AGC-->
+        <div id="tabAgc" class="tabcontent">
             <div id="agc">
-                <input type="checkbox" id="scales" name="scales" onchange="agc()">
+                <input type="checkbox" id="scales" onchange="agc()">
                 <label for="scales">AGC</label>
             </div>
         </div>
-
-        <div id="ongletapropos" class="tabcontent">
-            <img id=refApropos src="/ref.png">
-            <p id="apropos">Radio-club F6KFI</p>
+        <!--tab About-->
+        <div id="tabAbout" class="tabcontent">
+            <img id=refAbout src="/ref.png">
+            <p>Radio-club F6KFI</p>
+            <p>IHM developed by Benjamin Neveu</p>
+            <p>BTS SNIR 2021</p>
         </div>
-
+        <!--tab button-->
         <div class="tab">
-            <button class="tablinks" onclick="openMenu(event, 'ongletFreq')" id="defaultOpen">FREQ</button>
-            <button class="tablinks" onclick="openMenu(event, 'ongletBfo')">BFO</button>
-            <button class="tablinks" onclick="openMenu(event, 'agcOnglet')">AGC</button>
-            <button class="tablinks" onclick="openMenu(event, 'ongletapropos')">A propos</button>
+            <button class="tablinks" onclick="openMenu(event, 'tabFreq')" id="defaultOpen">FREQ</button>
+            <button class="tablinks" onclick="openMenu(event, 'tabBfo')">BFO</button>
+            <button class="tablinks" onclick="openMenu(event, 'tabAgc')">AGC</button>
+            <button class="tablinks" onclick="openMenu(event, 'tabAbout')">About</button>
         </div>
     </div>
+
     <script>
 
         document.getElementById("scales").click();
@@ -125,7 +126,7 @@
             $('.rotarySwitch2').rotaryswitch({ themeClass: 'small', showMarks: true, unit: 'bfo' });
         });
 
-        var sliderV = document.getElementById("RangeV");
+        var sliderV = document.getElementById("volume");
         sliderV.oninput = function () {
             var volume = sliderV.value;
             var xhr = new XMLHttpRequest();

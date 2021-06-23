@@ -211,7 +211,7 @@ void setup()
 
   });
 
-  server.on("/getFrequence", HTTP_GET, [](AsyncWebServerRequest * request) {
+  server.on("/getFrequency", HTTP_GET, [](AsyncWebServerRequest * request) {
     String freqDisplay;
     currentFrequency = si4735.getFrequency();
     freqDisplay = String((float)currentFrequency / 1000, 3);
@@ -254,7 +254,7 @@ void setup()
     request->send(200);
   });
 
-  server.on("/frequence", HTTP_POST, [](AsyncWebServerRequest * request) {
+  server.on("/frequency", HTTP_POST, [](AsyncWebServerRequest * request) {
     AsyncWebParameter* p = request->getParam(0);
     int val = p->value().toInt();
     si4735.setFrequency(val);
