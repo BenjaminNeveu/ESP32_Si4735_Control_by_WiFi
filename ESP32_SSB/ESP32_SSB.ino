@@ -197,7 +197,6 @@ void setup()
   //-------------------------SERVER-REQUEST-----------------------
 
   server.on("/mode", HTTP_POST, [](AsyncWebServerRequest * request) {
-
     AsyncWebParameter* p = request->getParam(0);
     si4735.setTuneFrequencyAntennaCapacitor(1); // Set antenna tuning capacitor for SW.
     si4735.setSSB(band[currentFreqIdx].minimumFreq, band[currentFreqIdx].maximumFreq, band[currentFreqIdx].currentFreq, band[currentFreqIdx].currentStep, band[currentFreqIdx].currentSSB);
@@ -208,7 +207,6 @@ void setup()
       band[currentFreqIdx].currentSSB = 1;
     }
     request->send(200);
-
   });
 
   server.on("/getFrequency", HTTP_GET, [](AsyncWebServerRequest * request) {
