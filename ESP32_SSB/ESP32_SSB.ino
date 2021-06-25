@@ -59,7 +59,7 @@ uint8_t currentAGCAtt = 0;
 
 uint8_t rssi = 0;
 
-const char *ssid = "RADIO";
+const char *ssid = "Récepteur SSB";
 const char *password = NULL;
 
 AsyncWebServer server(80);
