@@ -1,0 +1,23 @@
+
+div{
+    font-family: sans-serif;
+    text-align : center;
+}
+#frequence{
+    font-size: 60px;               
+}
+#entete{
+    text-align : center;
+}
+button{
+    width:80px;
+    height:80px;
+    margin :2%;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+.slider{
+    width:90%; 
+}

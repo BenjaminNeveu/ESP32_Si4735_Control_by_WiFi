@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Radio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="fonction.js" type="text/javascript"></script>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.rotaryswitch.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="entete">
+        <label id="frequence">--.---</label>
+        <label id="info">MHz</label>
+        </br>
+        <label id="pilot"></label>&nbsp;&nbsp;[SNR:&nbsp;<label id="snr"></label>&nbsp;dB Snignal:&nbsp;<label
+            id="rssi"></label>&nbsp;dBuV]
+        </br>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="63" value="25" class="slider" id="Range" onchange="volume()">
+            <!--<label id="volume"></label>-->
+        </div>
+    </div>
+    <hr>
+    </br>
+    <div>
+        MODE
+        <select id="mode" onchange="mode()">
+            <!--appelle de la fonction mode()-->
+            <option value="fm">FM</option>
+            <option value="am">AM</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;STEP
+        <select id="step">
+            <option value='0.1'>0.1</option>
+            <option value='0.5'>0.5</option>
+            <option value='1'>1</option>
+            <option value='5'>5</option>
+            <option value='10'>10</option>
+            <option value='100'>100</option>
+            <option value='1000'>1000</option>
+        </select>
+    </div>
+    </br>
+    <div id="button">
+        <button onclick="downButton()" id="stepDown"><-</button>
+        <button onclick="freqButton()" id="freq">FREQ</button>
+        <button onclick="upButton()" id="stepUp">-></button>
+        </br>
+        <button onclick="seekDown()" id="seekDown">SeekDown</button>
+        <button onclick="seekUp()" id="seekUp">SeekUp</button>
+        <!--<button onclick="getStatus()" id="status">status</button>-->
+    </div>
+    <script>
+        var slider = document.getElementById("Range");
+        //var output = document.getElementById("volume");
+        //output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            var volume = slider.value;
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "volume", true);
+            xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhr.send('volume=' + volume);
+        }
+
+    </script>
+</body>
+
+</html>
