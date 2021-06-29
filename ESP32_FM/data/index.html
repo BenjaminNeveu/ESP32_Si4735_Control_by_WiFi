@@ -12,15 +12,14 @@
 
 <body>
     <div id="entete">
-        <label id="frequence">--.---</label>
+        <label id="frequency">--.---</label>
         <label id="info">MHz</label>
         </br>
         <label id="pilot"></label>&nbsp;&nbsp;[SNR:&nbsp;<label id="snr"></label>&nbsp;dB Snignal:&nbsp;<label
             id="rssi"></label>&nbsp;dBuV]
         </br>
         <div class="slidecontainer">
-            <input type="range" min="0" max="63" value="25" class="slider" id="Range" onchange="volume()">
-            <!--<label id="volume"></label>-->
+            <input type="range" min="0" max="63" value="35" class="slider" id="Range" onchange="volume()">
         </div>
     </div>
     <hr>
@@ -28,7 +27,6 @@
     <div>
         MODE
         <select id="mode" onchange="mode()">
-            <!--appelle de la fonction mode()-->
             <option value="fm">FM</option>
             <option value="am">AM</option>
         </select>
@@ -38,9 +36,6 @@
             <option value='0.5'>0.5</option>
             <option value='1'>1</option>
             <option value='5'>5</option>
-            <option value='10'>10</option>
-            <option value='100'>100</option>
-            <option value='1000'>1000</option>
         </select>
     </div>
     </br>
@@ -49,14 +44,11 @@
         <button onclick="freqButton()" id="freq">FREQ</button>
         <button onclick="upButton()" id="stepUp">-></button>
         </br>
-        <button onclick="seekDown()" id="seekDown">SeekDown</button>
-        <button onclick="seekUp()" id="seekUp">SeekUp</button>
-        <!--<button onclick="getStatus()" id="status">status</button>-->
+        <button onclick="seekDown()" id="seekDown">Seek Down</button>
+        <button onclick="seekUp()" id="seekUp">Seek Up</button>
     </div>
     <script>
         var slider = document.getElementById("Range");
-        //var output = document.getElementById("volume");
-        //output.innerHTML = slider.value;
 
         slider.oninput = function () {
             var volume = slider.value;

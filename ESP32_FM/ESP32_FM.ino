@@ -83,7 +83,7 @@ void setup() {
   rx.setFM(8400, 10800, 10550, 10);
   delay(500);
   currentFrequency = previousFrequency = rx.getFrequency();
-  rx.setVolume(25);
+  rx.setVolume(35);
 
   //-------------------------SERVER-FILE-----------------------
 
@@ -124,7 +124,7 @@ void setup() {
     request->send(200);
   });
 
-  server.on("/getFrequence", HTTP_GET, [](AsyncWebServerRequest * request){   
+  server.on("/getFrequency", HTTP_GET, [](AsyncWebServerRequest * request){   
     previousFrequency = currentFrequency = rx.getFrequency();
     if (rx.isCurrentTuneFM()) {
       String frequence = (String(currentFrequency / 100.0, 2));
@@ -164,7 +164,7 @@ void setup() {
     request->send(200);
   });
 
-  server.on("/frequence", HTTP_POST, [](AsyncWebServerRequest * request) {
+  server.on("/frequency", HTTP_POST, [](AsyncWebServerRequest * request) {
     AsyncWebParameter* p = request->getParam(0);
     int val = p->value().toInt();
     rx.setFrequency(val);

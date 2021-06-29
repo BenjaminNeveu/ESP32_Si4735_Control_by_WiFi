@@ -12,19 +12,19 @@ function mode() {
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send('mode=' + mode);
 
-    getFrequence();
+    getFrequency();
 }
 
-function getFrequence() {
+function getFrequency() {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function()
     {
         if(this.readyState == 4 && this.status == 200)
         {
-            document.getElementById("frequence").innerHTML = this.responseText;
+            document.getElementById("frequency").innerHTML = this.responseText;
         }
     };
-    xhr.open("GET", "getFrequence", true);
+    xhr.open("GET", "getFrequency", true);
     xhr.send();
 }
 
@@ -67,32 +67,23 @@ function getPilot() {
     xhr.send();
 }
 
-/*
-function getStatus() {
-    getFrequence();
-    getPilot();
-    getSnr();
-    getRssi();
-}
-*/
-
 setInterval(function getData() {
-    getFrequence();
+    getFrequency();
     getPilot();
     getSnr();
     getRssi();
 }, 1000);
 
 function freqButton() {
-    var freq = prompt("Fréquence :");
+    var freq = prompt("Frequency :");
     if (document.getElementById("mode").value == "fm" ){
         freq = freq * 100;
     }
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "frequence", true);
+    xhr.open("POST", "frequency", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.send('frequence=' + freq);
-    getFrequence();
+    xhr.send('frequency=' + freq);
+    getFrequency();
 }
 
 function downButton() {
@@ -104,7 +95,7 @@ function downButton() {
     xhr.open("POST", "down", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send('step=' + step);
-    getFrequence();
+    getFrequency();
 }
 
 function upButton() {
@@ -116,21 +107,21 @@ function upButton() {
     xhr.open("POST", "up", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send('step=' + step);
-    getFrequence();
+    getFrequency();
 }
 
 function seekDown() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "seekdown", true);
     xhr.send();
-    getFrequence();
+    getFrequency();
 }
 
 function seekUp() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "seekup", true);
     xhr.send();
-    getFrequence();
+    getFrequency();
 }
 
 function bandwidth() {
