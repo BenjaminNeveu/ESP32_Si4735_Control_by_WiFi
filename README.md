@@ -25,7 +25,7 @@
 
 |  |  |
 |--|--|
-| ![](extra/screen-install/config_IDE_Arduino.png) | ![](extra/screen-install/capture_pref.png) |
+| ![](extra/screen-install-readme/config_IDE_Arduino.png) | ![](extra/screen-install-readme/capture_pref.png) |
 
 Entrer l’URL suivante dans URL de gestionnaire de cartes supplémentaires.
 	
@@ -33,7 +33,7 @@ Entrer l’URL suivante dans URL de gestionnaire de cartes supplémentaires.
 
 |  |  |
 |--|--|
-| ![](extra/screen-install/Capture_outil_gestion.png) | ![](extra/screen-install/capture_gestion.png) |
+| ![](extra/screen-install-readme/Capture_outil_gestion.png) | ![](extra/screen-install-readme/capture_gestion.png) |
 
 Écrivez ```esp32``` dans filtrez votre recherche. <br>Choisissez ```esp32``` et cliquez sur ``Installer``
 
@@ -49,7 +49,7 @@ Dans le menu ``Outil`` choisissez :
  Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive ![libraries.zip](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/raw/master/libraries/libraries.zip) .
 |  |  |
 |--|--|
-| Une fois extrait vous obtiendrez <br> un fichier ````libraries```` contenant <br> les dossiers ci-contre. |![](extra/screen-install/fichier_libraries.png)|
+| Une fois extrait vous obtiendrez <br> un fichier ````libraries```` contenant <br> les dossiers ci-contre. |![](extra/screen-install-readme/fichier_libraries.png)|
 
 Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libraries````.
 
@@ -58,7 +58,7 @@ Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libr
 Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive <br>![tools.zip](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/raw/master/SPIFFS_tools/tools.zip) .
 |  |  |
 |--|--|
-| Une fois extrait vous obtiendrez <br>un fichier ````tools```` contenant  le dossier ci-contre. |![](extra/screen-install/fichier_tools.png)|
+| Une fois extrait vous obtiendrez <br>un fichier ````tools```` contenant  le dossier ci-contre. |![](extra/screen-install-readme/fichier_tools.png)|
 
 Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Arduino/tools````. Il se peut que le dossier ```tools``` n'existe pas encore, il suffit de le crée.
 
@@ -74,7 +74,7 @@ Une fois télécharger veuillez extraire l'archive vers ```<home_dir>/Arduino```
 
 |  |  |
 |--|--|
-| Voici le contenu du dossier ``Arduino``<br> si vous n'avez pas fait d'autre projet auparavant | ![](extra/screen-install/contenu_arduino.png) |
+| Voici le contenu du dossier ``Arduino``<br> si vous n'avez pas fait d'autre projet auparavant | ![](extra/screen-install-readme/contenu_arduino.png) |
 
 ### Compilation Format_SPIFFS
 
@@ -82,7 +82,7 @@ Il faut commencer par ce programme parce qu'il permet de formater la mémoire de
 
 |  |  |
 |--|--|
-|Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Un gestionnaire de fichier se lancer<br><br>Selectionnez le fichier ```Format_SPIFFS.ino```<br>Qui ce situe dans :<br><br>``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](extra/screen-install/Fichier_ouvrir.png) |
+|Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Un gestionnaire de fichier se lancer<br><br>Selectionnez le fichier ```Format_SPIFFS.ino```<br>Qui ce situe dans :<br><br>``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](extra/screen-install-readme/Fichier_ouvrir.png) |
 
 
 il vous reste plus que a compiler ce premier programme
