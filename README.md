@@ -85,6 +85,9 @@ Il faut commencer par ce programme parce qu'il permet de formater la mémoire de
 |Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Un gestionnaire de fichier se lancer<br><br>Selectionnez le fichier ```Format_SPIFFS.ino```<br>Qui ce situe dans :<br><br>``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](04_extras/screen-install-readme/Fichier_ouvrir.png) |
 
 
-il vous reste plus que a compiler ce premier programme
+Il vous reste plus que a compiler ce premier programme
 
 ### Compilation ESP32_SSB
+
+La première parti est identiques a celle d'avant.
+Après avoir compiler le programme nous allons compiler le fichier data en cliquant sur ``ESP32 Sketch Data``
