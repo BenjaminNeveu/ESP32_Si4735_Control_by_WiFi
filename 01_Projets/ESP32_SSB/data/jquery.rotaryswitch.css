@@ -1,0 +1,41 @@
+
+.rotaryswitchPlugin {
+  top: 60%;
+  position: absolute;
+  margin-left: 13%;
+  margin-right: auto;
+  width: 102px;
+  height: 102px;
+  cursor: pointer;
+  background: url(/darkSmallBackground.png) no-repeat;
+}
+
+.rotaryswitchPlugin .switch {
+  width: 100%;
+  height: 100%;
+  background: url(/darkSmallFront.png) no-repeat;
+}
+
+.rotaryswitchPlugin .mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -1px 0 0 0;
+  width: 1px;
+  height: 3px;
+  background-color: #0e0e0e;
+}
+
+.rotaryswitchPlugin input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -60px;
+  width: 100%;
+  border: none;
+  z-index: 100;
+  text-align: left;
+  background: none;
+  font: normal 18px/18px verdana;
+  color: #0e0e0e;
+}
