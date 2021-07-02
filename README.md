@@ -90,4 +90,4 @@ Il vous reste plus que a compiler ce premier programme
 ### Compilation ESP32_SSB
 
 La première parti est identiques a celle d'avant.
-Après avoir compiler le programme nous allons compiler le fichier data en cliquant sur ``ESP32 Sketch Data``
+Après avoir compiler le programme nous allons compiler le fichier data en cliquant sur ``ESP32 Sketch Data``.
