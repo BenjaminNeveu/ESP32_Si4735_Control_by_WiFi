@@ -1,12 +1,12 @@
 ﻿# Récepteur SSB contrôlé par smartphone
 Étudiant en BTS informatique et réseau au Lycée Touchard Washington, à Le Mans. J'ai du lors de mon stage faire la conception d'une IHM pour un récepteur SSB.
 
- 1. [Présentation](https://github.com/BenjaminNeveu/test-readme#pr%C3%A9sentation)
- 2. [Screenshot](https://github.com/BenjaminNeveu/test-readme#screenshot)
- 3. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/test-readme#compilation-de-lide-arduino-pour-lesp32)
- 4. [Installation des librairies](https://github.com/BenjaminNeveu/test-readme#installation-des-librairies)  
- 5. [Installation de SPIFFS](https://github.com/BenjaminNeveu/test-readme#installation-de-spiffs)
- 6. [Compilation avec l'IDE Arduino](https://github.com/BenjaminNeveu/test-readme#compilation-avec-lide-arduino)
+ 1. [Présentation](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735#pr%C3%A9sentation)
+ 2. [Screenshot](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735#screenshot)
+ 3. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735#compilation-de-lide-arduino-pour-lesp32)
+ 4. [Installation des librairies](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735#installation-des-librairies)  
+ 5. [Installation de SPIFFS](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735#installation-de-spiffs)
+ 6. [Compilation avec l'IDE Arduino](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735#compilation-avec-lide-arduino)
 ## Présentation
 
 |  |  |
@@ -45,7 +45,7 @@ Dans le menu ``Outil`` choisissez :
  - ![ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
  - ![AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
  
- Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive ![libraries.zip](https://github.com/BenjaminNeveu/test-readme/raw/master/libraries/libraries.zip) .
+ Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive ![libraries.zip](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/raw/master/libraries/libraries.zip) .
 |  |  |
 |--|--|
 | Une fois extrait vous obtiendrez <br> un fichier ````libraries```` contenant <br> les dossiers ci-contre. |![](extra/screen-install-readme/fichier_libraries.png)|
@@ -54,20 +54,20 @@ Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libr
 
 ## Installation de SPIFFS
 
-Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive <br>![tools.zip](https://github.com/BenjaminNeveu/test-readme/raw/master/SPIFFS_tools/tools.zip) .
+Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive <br>![tools.zip](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/raw/master/SPIFFS_tools/tools.zip) .
 |  |  |
 |--|--|
 | Une fois extrait vous obtiendrez <br>un fichier ````tools```` contenant  le dossier ci-contre. |![](extra/screen-install-readme/fichier_tools.png)|
 
 Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Arduino/tools````. Il se peut que le dossier ```tools``` n'existe pas encore, il suffit de le crée.
 
-![Pour plus d'info sur SPIFFS](https://github.com/BenjaminNeveu/test-readme/blob/master/SPIFFS_tools)
+![Pour plus d'info sur SPIFFS](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/blob/master/SPIFFS_tools)
 
 
 
 ## Compilation avec l'IDE Arduino
 
-Pour compiler l'ESP32, je vous conseil de télécharger l'archive ![projets.zip](https://github.com/BenjaminNeveu/test-readme/raw/master/extra/projets.zip) qui contient tout les projet nécessaire.
+Pour compiler l'ESP32, je vous conseil de télécharger l'archive ![projets.zip](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/raw/master/extra/projets.zip) qui contient tout les projet nécessaire.
 
 Une fois télécharger veuillez extraire l'archive vers ```<home_dir>/Arduino```
 
