@@ -55,7 +55,7 @@ Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libr
 
 ## Installation de SPIFFS
 
-Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive <br>![tools.zip](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/raw/master/03_SPIFFS_tools/tools.zip) .
+Pour installer SPIFFS. Il vous suffit de télécharger l'archive <br>![tools.zip](https://github.com/BenjaminNeveu/Stage-ESP32-Si4735/raw/master/03_SPIFFS_tools/tools.zip) .
 |  |  |
 |--|--|
 | Une fois extrait vous obtiendrez <br>un fichier ````tools```` contenant  le dossier ci-contre. |![](04_extras/screen-install-readme/fichier_tools.png)|
