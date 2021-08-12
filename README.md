@@ -1,8 +1,8 @@
 ﻿# Récepteur SSB contrôlé par smartphone
-Étudiant en BTS informatique et réseau au Lycée Touchard Washington, à Le Mans. J'ai du lors de mon stage faire la conception d'une IHM pour un récepteur SSB.
+Étudiant en BTS informatique et réseau au Lycée Touchard Washington, à Le Mans. J'ai du lors de mon stage faire la conception d'une IHM pour un récepteur SSB. J'ai réalisé pendant mon stage au radio club F6KFI une IHM pour un récepteur SSB à base du SI4735.
 
  1. [Présentation](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#pr%C3%A9sentation)
- 2. [Screenshot](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#screenshot)
+ 2. [Copies d'écran](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#copies-décran)
  3. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#configuration-de-lide-arduino-pour-lesp32)
  4. [Installation des librairies](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#installation-des-librairies)  
  5. [Installation de SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#installation-de-spiffs)
@@ -12,14 +12,14 @@
 
 |  |  |
 |--|--|
-| La carte pour le projet est composé d'un ESP32 et d'un circuit intégré Si4735 <br> <br> Pour programmer programmer le Si4735 avec un ESP32 j'ai utiliser la librairie de ![PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_extras/montage/img_montage2.jpg)|
+| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735 <br> <br> Pour programmer le Si4735 avec un ESP32 j'ai utilisé la librairie de ![PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_extras/montage/img_montage2.jpg)|
 
 
-## Screenshot
+## Copies d'écran
 
 |  |  |  |
 |--|--|--|
-| ![](04_extras/screenshot/ssb_freq.jpg) | ![](04_extras/screenshot/ssb_bfo.jpg) |On peut voir sur le screenshot les <br>principale informations sur la partie supérieur de l'écren suivi de 3 liste déroulante pour <br>selectionné les différent paramétres <br> <hr>Dans la patie inférieur est <br>composé en 4 onglets 'FREQ', 'BFO', 'AGC' et 'About' qui comporte un bouton ratatif dans freq et bfo qui sert a incrémenter ou a désincrémenter <br><br>|
+| ![](04_extras/screenshot/ssb_freq.jpg) | ![](04_extras/screenshot/ssb_bfo.jpg) |On peut voir sur la copies d'écran les <br>principales informations sur la partie supérieur de l'écran suivi de 3 listes déroulantes pour <br>selectionner les différents paramètres <br> <hr>La patie inférieur est composé <br>de 4 onglets 'FREQ', 'BFO', 'AGC' et 'About'<br> <hr>Un bouton rotatif permet d’incrémenter ou décrémenter la fréquence.|
 
 ## Configuration de l'IDE Arduino pour l'ESP32
 
@@ -46,10 +46,10 @@ Dans le menu ``Outil`` choisissez :
  - ![ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
  - ![AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
  
- Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il vous suffit de télécharger l'archive ![libraries.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/02_libraries/libraries.zip) .
+ Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il suffit de télécharger l'archive ![libraries.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/02_libraries/libraries.zip) .
 |  |  |
 |--|--|
-| Une fois extrait vous obtiendrez <br> un fichier ````libraries```` contenant <br> les dossiers ci-contre. |![](04_extras/screen-install-readme/fichier_libraries.png)|
+| Une fois extrait, vous obtiendrez <br> un répetoire ````libraries```` contenant <br> les dossiers ci-contre. |![](04_extras/screen-install-readme/fichier_libraries.png)|
 
 Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libraries````.
 
@@ -58,9 +58,9 @@ Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libr
 Pour installer SPIFFS. Il vous suffit de télécharger l'archive <br>![tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/03_tools/tools.zip) .
 |  |  |
 |--|--|
-| Une fois extrait vous obtiendrez <br>un fichier ````tools```` contenant  le dossier ci-contre. |![](04_extras/screen-install-readme/fichier_tools.png)|
+| Une fois extrait, vous obtiendrez <br>un répertoire ````tools```` contenant  le dossier ci-contre. |![](04_extras/screen-install-readme/fichier_tools.png)|
 
-Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Arduino/tools````. Il se peut que le dossier ```tools``` n'existe pas encore, il suffit de le crée.
+Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Arduino/tools````. Il se peut que le dossier ```tools``` n'existe pas encore, il suffit de le créer.
 
 ![Pour plus d'info sur SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/blob/master/03_tools)
 
@@ -68,9 +68,9 @@ Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Ardu
 
 ## Compilation avec l'IDE Arduino
 
-Pour compiler l'ESP32, je vous conseil de télécharger l'archive ![projets.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/01_Projets/projets.zip) qui contient tout les projet nécessaire.
+Pour compiler l'ESP32, je vous conseille de télécharger l'archive ![projets.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/01_Projets/projets.zip) qui contient tout les projets nécessaires.
 
-Une fois télécharger veuillez extraire l'archive vers ```<home_dir>/Arduino```
+Une fois téléchargé veuillez extraire l'archive vers ```<home_dir>/Arduino```
 
 |  |  |
 |--|--|
@@ -82,10 +82,10 @@ Il faut commencer par ce programme parce qu'il permet de formater la mémoire de
 
 |  |  |
 |--|--|
-|Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Un gestionnaire de fichier se lancer<br><br>Selectionnez le fichier ```Format_SPIFFS.ino```<br>Qui ce situe dans :<br><br>``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](04_extras/screen-install-readme/Fichier_ouvrir.png) |
+|Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Sélectionnez le fichier ```Format_SPIFFS.ino``` <br>Qui ce situe dans : <br><br> ``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](04_extras/screen-install-readme/Fichier_ouvrir.png) |
 
 
-Il vous reste plus que a compiler ce premier programme
+Il vous reste plus qu'à compiler ce premier programme
 
 ### Compilation ESP32_SSB
 
