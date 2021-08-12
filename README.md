@@ -12,7 +12,7 @@
 
 |  |  |
 |--|--|
-| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735 <br> <br> Pour programmer le Si4735 avec un ESP32 j'ai utilisé la librairie de ![PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_extras/montage/img_montage2.jpg)|
+| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735 <br> <br> Pour programmer le Si4735 avec un ESP32 j'ai utilisé la librairie de ![PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_extras/montage/proto_pcb.jpg)|
 
 
 ## Copies d'écran
