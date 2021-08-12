@@ -3,7 +3,7 @@
 
  1. [Présentation](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#pr%C3%A9sentation)
  2. [Screenshot](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#screenshot)
- 3. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#compilation-de-lide-arduino-pour-lesp32)
+ 3. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#configuration-de-lide-arduino-pour-lesp32)
  4. [Installation des librairies](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#installation-des-librairies)  
  5. [Installation de SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#installation-de-spiffs)
  6. [Compilation avec l'IDE Arduino](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#compilation-avec-lide-arduino)
