@@ -66,7 +66,7 @@ Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Ardu
 
 
 
-## Compilation avec l'IDE Arduino
+## Compilation avec l'IDE Arduino 
 
 Pour compiler l'ESP32, je vous conseille de télécharger l'archive ![projets.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/01_Projets/projets.zip) qui contient tout les projets nécessaires.
 
@@ -76,7 +76,7 @@ Une fois téléchargé veuillez extraire l'archive vers ```<home_dir>/Arduino```
 |--|--|
 | Voici le contenu du dossier ``Arduino``<br> si vous n'avez pas fait d'autre projet auparavant | ![](04_extras/screen-install-readme/contenu_arduino.png) |
 
-### Compilation Format_SPIFFS
+### Compilation Format_SPIFFS 
 
 Il faut commencer par ce programme parce qu'il permet de formater la mémoire de L'ESP32, il est obligatoire de respecter cette étape pour que le projet fonctionne correctement.
 
@@ -87,7 +87,7 @@ Il faut commencer par ce programme parce qu'il permet de formater la mémoire de
 
 Il vous reste plus qu'à compiler ce premier programme
 
-### Compilation ESP32_SSB
+### Compilation ESP32_SSB 
 
 La première parti est identiques a celle d'avant.
 Après avoir compiler le programme nous allons compiler le fichier data en cliquant sur le menu ``Outils`` puis sur ``ESP32 Sketch Data Upload``.
