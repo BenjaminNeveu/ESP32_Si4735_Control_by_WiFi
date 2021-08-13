@@ -62,8 +62,6 @@ Pour installer SPIFFS. Il vous suffit de télécharger l'archive <br>![tools.zip
 
 Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Arduino/tools````. Il se peut que le dossier ```tools``` n'existe pas encore, il suffit de le créer.
 
-![Pour plus d'info sur SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/blob/master/03_tools)
-
 
 
 ## Compilation avec l'IDE Arduino 
