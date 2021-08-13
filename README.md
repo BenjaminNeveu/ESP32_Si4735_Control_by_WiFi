@@ -78,12 +78,17 @@ Une fois téléchargé veuillez extraire l'archive vers ```<home_dir>/Arduino```
 
 ### Compilation Format_SPIFFS 
 
-Il faut commencer par ce programme parce qu'il permet de formater la mémoire de L'ESP32, il est obligatoire de respecter cette étape pour que le projet fonctionne correctement.
+Il obligatoire commencer par ce programme pour que le récépteur fonctionne correctement, parce qu'il permet de formater la mémoire de L'ESP32.
 
 |  |  |
 |--|--|
 |Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Sélectionnez le fichier ```Format_SPIFFS.ino``` <br>Qui ce situe dans : <br><br> ``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](04_extras/screen-install-readme/Fichier_ouvrir.png) |
 
+Avant de téléverser le programme, je vous conseille d'ouvrir le moniteur série en cliquant sur ``Outils`` puis sur ``Moniteur Série``, pour vérifier que le formatage de la mémoire c'est réalisé correctement.
+
+|  |  |
+|--|--|
+|![](04_extras/screen-install-readme/menu_moniteur_serie.png)|![](04_extras/screen-install-readme/moniteur_serie.png)|
 
 |  |  |
 |--|--|
