@@ -89,6 +89,9 @@ Avant de téléverser le programme, je vous conseille d'ouvrir le moniteur séri
 |  |  |
 |--|--|
 |![](04_extras/screen-install-readme/menu_moniteur_serie.png)|![](04_extras/screen-install-readme/moniteur_serie.png)|
+
+|  |  |
+|--|--|
 |Il vous reste plus qu'à téléverser ce programme sur l'ESP32|![](04_extras/screen-install-readme/televerser.png)|
 
 ### Compilation ESP32_SSB 
