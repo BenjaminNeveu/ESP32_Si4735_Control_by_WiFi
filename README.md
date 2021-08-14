@@ -98,4 +98,4 @@ Ouvrez le fichier ``ESP32_SSB.ino`` qui se situe dans ``<home_dir>/Arduino/proje
 
 |  |  |
 |--|--|
-|Une fois le programme compillé, vous allez téléverser le contenu du répertoire ``data`` qui contient l'interface, pour ceci vous allez cliquer sur ``Outils`` puis sur ``ESP32 Sketch Data Upload``|![](04_extras/screen-install-readme/televerser_data.png)|
+|Une fois le programme compillé, vous allez téléverser <br>le contenu du répertoire ``data`` qui contient <br>l'interface, pour ceci vous allez cliquer sur ``Outils`` puis sur ``ESP32 Sketch Data Upload``|![](04_extras/screen-install-readme/televerser_data.png)|
