@@ -38,7 +38,7 @@ Entrer l’URL suivante dans URL de gestionnaire de cartes supplémentaires.
 Écrivez ```esp32``` dans filtrez votre recherche. <br>Choisissez ```esp32``` et cliquez sur ``Installer``
 
 Dans le menu ``Outil`` choisissez :
-* Type de carte ``ESP32 Dev Module``
+* Type de carte : ESP32 Aruino -->``ESP32 Dev Module``
 
 ## Installation des librairies
 
@@ -74,7 +74,7 @@ Une fois téléchargé veuillez extraire l'archive vers ```<home_dir>/Arduino```
 |--|--|
 | Voici le contenu du dossier ``Arduino``<br> si vous n'avez pas fait d'autre projet auparavant | ![](04_extras/screen-install-readme/contenu_arduino.png) |
 
-### Compilation Format_SPIFFS 
+### Compilation de Format_SPIFFS 
 
 Il obligatoire commencer par ce programme pour que le récépteur fonctionne correctement, parce qu'il permet de formater la mémoire de L'ESP32.
 
@@ -92,7 +92,10 @@ Avant de téléverser le programme, je vous conseille d'ouvrir le moniteur séri
 |--|--|
 |Il vous reste plus qu'à téléverser ce programme sur l'ESP32|![](04_extras/screen-install-readme/televerser.png)|
 
-### Compilation ESP32_SSB 
+### Compilation de ESP32_SSB 
 
-La première parti est identiques a celle d'avant.
-Après avoir compiler le programme nous allons compiler le fichier data en cliquant sur le menu ``Outils`` puis sur ``ESP32 Sketch Data Upload``.
+Ouvrez le fichier ``ESP32_SSB.ino`` qui se situe dans ``<home_dir>/Arduino/projets/ESP32_SSB``, téléversez le dans votre ESP32.
+
+|  |  |
+|--|--|
+|Une fois le programme compillé, vous allez téléverser le contenu du répertoire ``data`` qui contient l'interface, pour ceci vous allez cliquer sur ``Outils`` puis sur ``ESP32 Sketch Data Upload``|![](04_extras/screen-install-readme/televerser_data.png)|
