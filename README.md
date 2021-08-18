@@ -7,6 +7,7 @@
  4. [Installation des librairies](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#installation-des-librairies)  
  5. [Installation de SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#installation-de-spiffs)
  6. [Compilation avec l'IDE Arduino](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#compilation-avec-lide-arduino)
+ 7. [Connection au récepteur](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#connection-au-récepteur)
 
 ## Présentation
 
@@ -99,3 +100,10 @@ Ouvrez le fichier ``ESP32_SSB.ino`` qui se situe dans ``<home_dir>/Arduino/proje
 |  |  |
 |--|--|
 |Une fois le programme compillé, vous allez téléverser <br>le contenu du répertoire ``data`` qui contient l'interface,<br> pour ceci vous allez cliquer sur ``Outils`` puis sur<br> ``ESP32 Sketch Data Upload``|![](04_extras/screen-install-readme/televerser_data.png)|
+
+## Connection au récepteur
+
+|  |  |
+|--|--|
+|Pour se connecter au récepteur, ils vous suffit d'aller dans vos paramètres Wi-Fi et de sélectionner ``Récepteur SSB`` (il n'y a pas de mots de passe). Une fois connecté vous pouvez aller sur un navigateur et écrire dans la barre d'adresse ``192.168.4.1`` pour accéder a l'interface.|![](04_extras/screen-install-readme/parametre_wifi.jpg)
+![](04_extras/screen-install-readme/connection_recepteur.jpg)|
