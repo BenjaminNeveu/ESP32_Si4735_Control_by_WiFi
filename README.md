@@ -42,11 +42,11 @@ Dans le menu ``Outil`` choisissez :
 
 ## Installation des librairies
 
- - ![PU2CLR_Si4735](https://github.com/pu2clr/SI4735) 
- - ![ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
- - ![AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
+ - [PU2CLR_Si4735](https://github.com/pu2clr/SI4735) 
+ - [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
+ - [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
  
- Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il suffit de télécharger l'archive ![libraries.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/02_libraries/libraries.zip) .
+ Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il suffit de télécharger l'archive [libraries.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/02_libraries/libraries.zip) .
 |  |  |
 |--|--|
 | Une fois extrait, vous obtiendrez <br> un répetoire ````libraries```` contenant <br> les dossiers ci-contre. |![](04_extras/screen-install-readme/fichier_libraries.png)|
@@ -55,7 +55,7 @@ Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libr
 
 ## Installation de SPIFFS
 
-Pour installer SPIFFS. Il vous suffit de télécharger l'archive <br>![tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/03_tools/tools.zip) .
+Pour installer SPIFFS. Il vous suffit de télécharger l'archive <br>[tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/03_tools/tools.zip) .
 |  |  |
 |--|--|
 | Une fois extrait, vous obtiendrez <br>un répertoire ````tools```` contenant  le dossier ci-contre. |![](04_extras/screen-install-readme/fichier_tools.png)|
@@ -66,7 +66,7 @@ Il vous reste juste a copié le dossier ````ESP32FS```` dans ````<home_dir>/Ardu
 
 ## Compilation avec l'IDE Arduino 
 
-Pour compiler l'ESP32, je vous conseille de télécharger l'archive ![projets.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/01_Projets/projets.zip) qui contient tout les projets nécessaires.
+Pour compiler l'ESP32, je vous conseille de télécharger l'archive [projets.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/01_Projets/projets.zip) qui contient tout les projets nécessaires.
 
 Une fois téléchargé veuillez extraire l'archive vers ```<home_dir>/Arduino```
 
