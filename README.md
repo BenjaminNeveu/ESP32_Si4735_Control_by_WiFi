@@ -55,7 +55,7 @@ Il vous reste juste a copié les trois dossiers dans ````<home_dir>/Arduino/libr
 
 ## Installation de SPIFFS
 
-Pour installer SPIFFS. Il vous suffit de télécharger l'archive <br>[tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/03_tools/tools.zip) .
+Pour installer SPIFFS. Il vous suffit de télécharger l'archive [tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/03_tools/tools.zip) .
 |  |  |
 |--|--|
 | Une fois extrait, vous obtiendrez <br>un répertoire ````tools```` contenant  le dossier ci-contre. |![](04_extras/screen-install-readme/fichier_tools.png)|
