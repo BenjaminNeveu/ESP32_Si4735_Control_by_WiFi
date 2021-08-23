@@ -13,14 +13,14 @@
 
 |  |  |
 |--|--|
-| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. <br> <br> Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la librairie de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_Extras/circuit_integre_test/img_montage.jpeg)|
+| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. <br> <br> Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la librairie de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_Extras/circuit_integre_test/img_montage.jpg)|
 
 
 ## Copies d'écran
 
 |  |  |  |
 |--|--|--|
-| ![](04_Extras/copie_ecran_ssb/1.0_ssb_freq.jpg) | ![](04_Extras/copie_ecran_ssb/2.0_ssb_bfo.jpg) |On peut voir sur la copie d'écran les <br>principales informations sur la partie supérieure de l'écran suivi de 3 listes déroulantes pour <br>sélectionner les différents paramètres <br> <hr>La patie inférieure est composé <br>de 4 onglets "FREQ", "BFO", "AGC" et "About"<br> <hr>Un bouton rotatif permet d’incrémenter ou décrémenter la fréquence.|
+| ![](04_Extras/copie_ecran_ssb/1.0_ssb_freq.jpg) | ![](04_Extras/copie_ecran_ssb/2.0_bfo.jpg) |On peut voir sur la copie d'écran les <br>principales informations sur la partie supérieure de l'écran suivi de 3 listes déroulantes pour <br>sélectionner les différents paramètres <br> <hr>La patie inférieure est composé <br>de 4 onglets "FREQ", "BFO", "AGC" et "About"<br> <hr>Un bouton rotatif permet d’incrémenter ou décrémenter la fréquence.|
 
 ## Configuration de l'IDE Arduino pour l'ESP32
 
