@@ -13,20 +13,20 @@
 
 |  |  |
 |--|--|
-| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. <br> <br> Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la librairie de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_extras/montage/prototype_pcb.jpeg)|
+| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. <br> <br> Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la librairie de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](04_Extras/circuit_integre_test/img_montage.jpeg)|
 
 
 ## Copies d'écran
 
 |  |  |  |
 |--|--|--|
-| ![](04_extras/screenshot/ssb_freq.jpg) | ![](04_extras/screenshot/ssb_bfo.jpg) |On peut voir sur la copie d'écran les <br>principales informations sur la partie supérieure de l'écran suivi de 3 listes déroulantes pour <br>sélectionner les différents paramètres <br> <hr>La patie inférieure est composé <br>de 4 onglets "FREQ", "BFO", "AGC" et "About"<br> <hr>Un bouton rotatif permet d’incrémenter ou décrémenter la fréquence.|
+| ![](04_Extras/copie_ecran_ssb/1.0_ssb_freq.jpg) | ![](04_Extras/copie_ecran_ssb/2.0_ssb_bfo.jpg) |On peut voir sur la copie d'écran les <br>principales informations sur la partie supérieure de l'écran suivi de 3 listes déroulantes pour <br>sélectionner les différents paramètres <br> <hr>La patie inférieure est composé <br>de 4 onglets "FREQ", "BFO", "AGC" et "About"<br> <hr>Un bouton rotatif permet d’incrémenter ou décrémenter la fréquence.|
 
 ## Configuration de l'IDE Arduino pour l'ESP32
 
 |  |  |
 |--|--|
-| ![](04_extras/screen-install-readme/config_IDE_Arduino.png) | ![](04_extras/screen-install-readme/capture_pref.png) |
+| ![](04_Extras/image_readme/config_IDE_Arduino.png) | ![](04_Extras/image_readme/capture_pref.png) |
 
 Entrer l’URL suivante dans URL de gestionnaire de cartes supplémentaires.
 	
@@ -34,7 +34,7 @@ Entrer l’URL suivante dans URL de gestionnaire de cartes supplémentaires.
 
 |  |  |
 |--|--|
-| ![](04_extras/screen-install-readme/Capture_outil_gestion.png) | ![](04_extras/screen-install-readme/capture_gestion.png) |
+| ![](04_Extras/image_readme/capture_outil_gestion.png) | ![](04_Extras/image_readme/capture_gestion.png) |
 
 Écrivez ``esp32`` dans ``filtrez votre recherche``. <br>Choisissez ``esp32`` et cliquez sur ``Installer``
 
@@ -50,7 +50,7 @@ Dans le menu ``Outil`` choisissez :
  Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il suffit de télécharger l'archive [libraries.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/02_libraries/libraries.zip) .
 |  |  |
 |--|--|
-| Une fois extrait, vous obtiendrez <br> un répetoire ``libraries`` contenant <br> les dossiers ci-contre. |![](04_extras/screen-install-readme/fichier_libraries.png)|
+| Une fois extrait, vous obtiendrez <br> un répetoire ``libraries`` contenant <br> les dossiers ci-contre. |![](04_Extras/image_readme/fichier_libraries.png)|
 
 Il vous reste juste a copié les trois dossiers dans ``<home_dir>/Arduino/libraries``.
 
@@ -59,7 +59,7 @@ Il vous reste juste a copié les trois dossiers dans ``<home_dir>/Arduino/librar
 Pour installer SPIFFS. Il vous suffit de télécharger l'archive [tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/03_tools/tools.zip) .
 |  |  |
 |--|--|
-| Une fois extrait, vous obtiendrez un répertoire <br>``tools`` contenant  le dossier ci-contre. |![](04_extras/screen-install-readme/fichier_tools.png)|
+| Une fois extrait, vous obtiendrez un répertoire <br>``tools`` contenant  le dossier ci-contre. |![](04_Extras/image_readme/fichier_tools.png)|
 
 Il vous reste juste a copier le dossier ````ESP32FS```` dans ``<home_dir>/Arduino/tools``. Il se peut que le dossier ``tools`` n'existe pas encore, il suffit de le créer.
 
@@ -73,7 +73,7 @@ Une fois téléchargé veuillez extraire l'archive vers ``<home_dir>/Arduino``
 
 |  |  |
 |--|--|
-| Voici le contenu du dossier ``Arduino``<br> si vous n'avez pas fait d'autre projet auparavant | ![](04_extras/screen-install-readme/contenu_arduino.png) |
+| Voici le contenu du dossier ``Arduino``<br> si vous n'avez pas fait d'autre projet auparavant | ![](04_Extras/image_readme/contenu_arduino.png) |
 
 ### Compilation de Format_SPIFFS 
 
@@ -81,17 +81,17 @@ Il est obligatoire commencer par ce programme pour que le récepteur fonctionne 
 
 |  |  |
 |--|--|
-|Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Sélectionnez le fichier ``Format_SPIFFS.ino``.<br><br>qui se situe dans : <br> ``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](04_extras/screen-install-readme/Fichier_ouvrir.png) |
+|Cliquez sur ``Fichier`` puis sur ``Ouvrir``<br><br>Sélectionnez le fichier ``Format_SPIFFS.ino``.<br><br>qui se situe dans : <br> ``<home_dir>/Arduino/projets/Format_SPIFFS`` |![](04_Extras/image_readme/fichier_ouvrir.png) |
 
 Avant de téléverser le programme, je vous conseille d'ouvrir le moniteur série en cliquant sur ``Outils`` puis sur ``Moniteur Série``, pour vérifier que le formatage de la mémoire s'est réalisé correctement.
 
 |  |  |
 |--|--|
-|![](04_extras/screen-install-readme/menu_moniteur_serie.png)|![](04_extras/screen-install-readme/moniteur_serie.png)|
+|![](04_Extras/image_readme/menu_moniteur_serie.png)|![](04_Extras/image_readme/moniteur_serie.png)|
 
 |  |  |
 |--|--|
-|Il vous reste plus qu'à téléverser ce programme sur l'ESP32|![](04_extras/screen-install-readme/televerser.png)|
+|Il vous reste plus qu'à téléverser ce programme sur l'ESP32|![](04_Extras/image_readme/televerser.png)|
 
 ### Compilation de ESP32_SSB 
 
@@ -99,10 +99,10 @@ Ouvrez le fichier ``ESP32_SSB.ino`` qui se situe dans ``<home_dir>/Arduino/proje
 
 |  |  |
 |--|--|
-|Une fois le programme compilé, vous allez téléverser <br>le contenu du répertoire ``data`` qui contient l'interface,<br> pour ceci vous allez cliquer sur ``Outils`` puis sur<br> ``ESP32 Sketch Data Upload``|![](04_extras/screen-install-readme/televerser_data.png)|
+|Une fois le programme compilé, vous allez téléverser <br>le contenu du répertoire ``data`` qui contient l'interface,<br> pour ceci vous allez cliquer sur ``Outils`` puis sur<br> ``ESP32 Sketch Data Upload``|![](04_Extras/image_readme/televerser_data.png)|
 
 ## Connection au récepteur
 
 |  |  |
 |--|--|
-|Pour se connecter au récepteur, il vous suffit d'aller dans <br>vos paramètres Wi-Fi et de sélectionner ``Récepteur SSB``, <br>(il n'y a pas de mots de passe).<br> Une fois connecté vous pouvez aller sur un navigateur<br> et écrire dans la barre d'adresse ``192.168.4.1`` pour accéder à l'interface <br><br><br><br>![](04_extras/screen-install-readme/connection_recepteur.jpg).|![](04_extras/screen-install-readme/parametre_wifi.jpg)|
+|Pour se connecter au récepteur, il vous suffit d'aller dans <br>vos paramètres Wi-Fi et de sélectionner ``Récepteur SSB``, <br>(il n'y a pas de mots de passe).<br> Une fois connecté vous pouvez aller sur un navigateur<br> et écrire dans la barre d'adresse ``192.168.4.1`` pour accéder à l'interface <br><br><br><br>![](04_Extras/image_readme/connection_recepteur.jpg).|![](04_Extras/image_readme/parametre_wifi.jpg)|
