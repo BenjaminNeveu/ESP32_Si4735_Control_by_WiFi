@@ -47,10 +47,10 @@ typedef struct
 Band band[] = {
   // freq-min, freq-max, freq, step-freq, modeSSB
   {472, 479, 472, 1, LSB},//630
-  {1810, 1850, 1810, 1, LSB},//160
-  {3500, 3800, 3700, 1, LSB},//80
+  {1800, 2000, 1800, 1, LSB},//160
+  {3500, 4000, 3700, 1, LSB},//80
   {5350, 5366, 5200, 1, LSB},//60
-  {7000, 7200, 7100, 1, LSB},//40
+  {7000, 7300, 7100, 1, LSB},//40
   {10100, 10150, 10100, 1, USB},//30
   {14000, 14350, 14070, 1, USB},//20
   {18068, 18168, 18100, 1, USB},//17
@@ -386,12 +386,12 @@ void setup()
     // application du changement
     si4735.setAutomaticGainControl(disableAgc, currentAGCAtt);
     request->send(200);
-
   });
 
   server.on("/reset", HTTP_GET, [](AsyncWebServerRequest * request) {
-    // je met le le BFO a 0 pour le réinitialiser
-    si4735.setSSBBfo(0);
+    // je met le le BFO a 0
+    currentBFO = 0;
+    si4735.setSSBBfo(currentBFO);
     request->send(200);
   });
 

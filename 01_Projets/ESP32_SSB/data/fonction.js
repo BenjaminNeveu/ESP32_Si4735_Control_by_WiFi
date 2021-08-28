@@ -72,7 +72,6 @@ function getBfo() {
 }
 
 setInterval(function getData() {
-    getFrequency();
     getSnr();
     getRssi();
     getAgc();
@@ -80,7 +79,7 @@ setInterval(function getData() {
 }, 1000);
 
 function freqButton() {
-    var freq = prompt("Frequency :");
+    var freq = prompt("Frequency (khz):");
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "frequency", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -94,6 +93,7 @@ function downFreq() {
     xhr.open("POST", "downFreq", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send('stepF=' + stepF);
+getFrequency();
 }
 
 function upFreq() {
@@ -102,6 +102,7 @@ function upFreq() {
     xhr.open("POST", "upFreq", true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send('stepF=' + stepF);
+getFrequency();
 }
 
 function downBfo() {
