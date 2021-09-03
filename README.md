@@ -105,4 +105,4 @@ Ouvrez le fichier ``ESP32_SSB.ino`` qui se situe dans ``<home_dir>/Arduino/proje
 
 |  |  |
 |--|--|
-|Pour se connecter au récepteur, il vous suffit d'aller dans <br>vos paramètres Wi-Fi et de sélectionner ``Récepteur SSB``, <br>(il n'y a pas de mots de passe).<br> Une fois connecté vous pouvez aller sur un navigateur<br> et écrire dans la barre d'adresse ``192.168.4.1`` pour accéder à l'interface <br><br><br><br>![](04_Extras/image_readme/connection_recepteur.jpg).|![](04_Extras/image_readme/parametre_wifi.jpg)|
+|Pour se connecter au récepteur, il vous suffit d'allez dans <br>vos paramètres Wi-Fi et de sélectionner ``Récepteur SSB``, <br>(il n'y a pas de mots de passe).<br> Une fois connecté vous pouvez allez sur un navigateur<br> et écrire dans la barre d'adresse ``192.168.4.1`` pour accéder à l'interface <br><br><br><br>![](04_Extras/image_readme/connection_recepteur.jpg).|![](04_Extras/image_readme/parametre_wifi.jpg)|
