@@ -1,5 +1,5 @@
 ﻿# Récepteur SSB contrôlé par smartphone
-Étudiant en BTS informatique et réseau au Lycée Touchard Washington, au Mans. J'ai réalisé lors de mon stage faire la conception d'une IHM pour un récepteur SSB. J'ai réalisé pendant mon stage au radio club F6KFI une IHM pour un récepteur SSB à base du SI4735.
+Étudiant en BTS informatique et réseau au Lycée Touchard Washington, au Mans. J'ai réalisé pendant mon stage au radio club F6KFI une IHM pour un récepteur SSB à base d'un SI4735.
 
  1. [Présentation](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#pr%C3%A9sentation)
  2. [Copies d'écran](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi#copies-décran)
