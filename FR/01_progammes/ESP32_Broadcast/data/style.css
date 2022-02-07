@@ -1,0 +1,34 @@
+
+div{
+    font-family: sans-serif;
+    text-align : center;
+}
+#frequency{
+    font-size: 70px;               
+}
+#entete{
+    text-align : center;
+}
+button{
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    width:80px;
+    height:80px;
+    margin :2%;
+}
+
+select{
+    font-size: 105%;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+.slidecontainer {
+    width: 100%;
+}
+.slider{
+    width:90%; 
+}
