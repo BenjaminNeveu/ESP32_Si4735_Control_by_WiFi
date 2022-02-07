@@ -13,7 +13,7 @@
 
 |  |  |
 |--|--|
-| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. <br> <br> Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la librairie de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](../img/circuit_integre_ESP32_Si4735_Control_by_WiFi/img_montage.jpg)|
+| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. <br> <br> Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la librairie de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](../img/test/img_montage.jpg)|
 
 ## Copies d'écran
 
