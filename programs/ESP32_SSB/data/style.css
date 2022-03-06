@@ -1,0 +1,158 @@
+body {
+  font-family: sans-serif;
+  text-align : center;
+}
+
+.freq{
+  height: 13%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+#frequency{
+  font-size: 70px;
+}
+
+#info{
+  height: 6%;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-size: 18px;
+}
+
+.slidecontainer {
+  height: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+.slider{
+    width:90%; 
+}
+
+.selectcontainer{
+  position: absolute;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.selectcontainer select{
+  width: 85px;
+}
+
+#mode{
+  left: 9%;
+}
+
+#ham{
+  left: 35%;
+  right: 35%;
+}
+
+#bandw{
+  right: 9%;
+}
+
+select{
+  font-size: 105%;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5% 5%;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  margin-top: 22%;
+  display: none;
+  padding: 14px 12px;
+  border: 2px solid #ccc;
+  border: none;
+  height: 39%;
+  font-size: 18px;
+}
+
+.tabcontent button:hover {
+  background-color: #ddd;
+}
+
+.tabcontent button.active {
+  background-color: #ccc;
+}
+
+.tabcontent button{
+  position: absolute;
+  top:65%;
+  right: 13%;
+  width:85px;
+  height:85px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  font-size: 18px;
+}
+
+.tabcontent #stepFreq{
+  position: absolute;
+  top:56%;
+  right: 8%;
+  font-size: 18px;
+}
+
+.tabcontent #stepBfo{
+  position: absolute;
+  top:56%;
+  right: 9.5%;
+  font-size: 18px;
+}
+
+.tabcontent #bfo{
+  position:absolute;
+  font-size: 30px;
+  left: 40%;
+  right: 40%;
+}
+
+.tabcontent #agc{
+  position: absolute;
+  margin-top :5%;
+  font-size: 19px;
+  left: 15%;
+}
+
+.tabcontent #about{
+  font-size: 19px;
+}
+
+#refAbout{
+  position: relative;
+  height: 40%;
+  width: auto;
+}
