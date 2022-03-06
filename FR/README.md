@@ -48,7 +48,7 @@ Pour ce projet j'ai utilisé trois librairies :
  - [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
  - [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)
  
- Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il suffit de télécharger l'archive [libraries.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/FR/02_libraries/libraries.zip) .
+ Pour installer les librairies Si4735, ESPAsyncWebServer et AsyncTCP. Il suffit de télécharger l'archive [libraries.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/libraries/libraries.zip) .
 |  |  |
 |--|--|
 | Une fois extrait, vous obtiendrez <br> un répetoire ``libraries`` contenant <br> les dossiers ci-contre. |![](../img/image_readme/fichier_libraries.png)|
@@ -57,7 +57,7 @@ Il vous reste juste a copié les trois dossiers dans ``<home_dir>/Arduino/librar
 
 ## Installation de SPIFFS
 
-Pour installer SPIFFS. Il vous suffit de télécharger l'archive [tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/FR/03_tools/tools.zip) .
+Pour installer SPIFFS. Il vous suffit de télécharger l'archive [tools.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/tools/tools.zip) .
 |  |  |
 |--|--|
 | Une fois extrait, vous obtiendrez un répertoire <br>``tools`` contenant  le dossier ci-contre. |![](../img/image_readme/fichier_tools.png)|
@@ -66,7 +66,7 @@ Il vous reste juste a copier le dossier ````ESP32FS```` dans ``<home_dir>/Arduin
 
 ## Compilation avec l'IDE Arduino 
 
-Pour compiler l'ESP32, je vous conseille de télécharger l'archive [programmes.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/FR/01_progammes/programmes.zip) qui contient tous les programmes.
+Pour compiler l'ESP32, je vous conseille de télécharger l'archive [programmes.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/progammes/programmes.zip) qui contient tous les programmes.
 
 Une fois téléchargé veuillez extraire l'archive vers ``<home_dir>/Arduino``
 
