@@ -1,25 +1,32 @@
 ﻿# Récepteur SSB contrôlé par smartphone
-Étudiant en BTS informatique et réseau au Lycée Touchard Washington, au Mans. J'ai réalisé pendant mon stage au radio club F6KFI une IHM pour un récepteur SSB à base d'un SI4735.
+Étudiant en BTS informatique et réseau au lycée Touchard Washington au Mans, j’ai effectué un stage de 6 semaines au radio-club F6KFI du Mans. Mon sujet de stage avait pour objectif de programmer une interface homme machine d’un récepteur SSB avec comme base le circuit intégré SI4735.
 
  1. [Présentation](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#pr%C3%A9sentation)
- 2. [Copies d'écran](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#copies-décran)
- 3. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#configuration-de-lide-arduino-pour-lesp32)
- 4. [Installation des librairies](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#installation-des-librairies)  
+ 2. [Description de l'interface](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#Description-de-linterface)
+ 3. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR/01_Configuration_IDE_Arduino)
+ 4. [Installation des bibliothèques](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#installation-des-librairies)  
  5. [Installation de SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#installation-de-spiffs)
  6. [Compilation avec l'IDE Arduino](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#compilation-avec-lide-arduino)
- 7. [Connection au récepteur](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#connection-au-récepteur)
+ 7. [Connection au récepteur](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR#connection-au-r%C3%Acepteur)
 
 ## Présentation
 
+L’objectif de mon projet est simple contrôler le récepteur avec un smartphone plutôt qu’un afficheur. Pour cela, je dois concevoir une IHM (interface homme machine) à l’aide d’un point d’accès WiFi et d’une page web. Il aurait été possible de réaliser une application dédiée pour Android. Mais utilisation d'un serveur web directement intégré dans le microcontrôleur ESP32 permet une utilisation plus polyvalente des différentes marques de smartphones.
+
 |  |  |
 |--|--|
-| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. <br> <br> Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la librairie de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite| ![](../img/circuit_integre_test/img_montage.jpg)|
+| Le récepteur SSB est composé d'un ESP32 et d'un circuit intégré Si4735. La plupart du temps, ce composant (qui ne coûte que quelques euros) est piloté par un Arduino et un écran tactile. Le programme que j’ai réalisé a pour but de contrôler le récepteur avec un simple smartphone. Cela permet ainsi de réduire les coûts, le récepteur complet étant réduit à un microcontrôleur ESP32 (muni d’un point d’accès WiFi) et le SI4735. Pour programmer l'ESP32 avec un Si4735 j'ai utilisé la bibliothèque de [PU2CLR](https://github.com/pu2clr/SI4735) qui est très complète et très bien décrite par ailleurs il recense également différents projets sur son site | ![](../img/circuit_integre_test/img_montage.jpg) <br> Prototype utilisé lors du stage |
 
-## Copies d'écran
+La réception de la SSB est rendue possible grâce à un micro code téléchargé dans le si4735 à la mise sous tension. Le circuit intégré fonctionne de la même manière qu’un récepteur SDR (Radio Logicielle) classique sans avoir besoin d’un ordinateur. La sélection de la fréquence de réception ainsi que le mode de réception sont réalisés par un microcontrôleur via un bus I²C. Le microcontrôleur ne réalise aucun traitement audio, il est seulement utilisé pour commander le SI4735 et héberger la page WEB (L’interface de contrôle de mon projet). L’oscillateur local est cadencé par un quartz de 32768 Hz.
 
-|  |  |  |
-|--|--|--|
-| ![](../img/copie_ecran_ssb/1.0_ssb_freq.jpg) | ![](../img/copie_ecran_ssb/2.0_bfo.jpg) |On peut voir sur la copie d'écran les <br>principales informations sur la partie supérieure de l'écran suivi de 3 listes déroulantes pour <br>sélectionner les différents paramètres <br> <hr>La patie inférieure est composé <br>de 4 onglets "FREQ", "BFO", "AGC" et "About"<br> <hr>Un bouton rotatif permet d’incrémenter ou décrémenter la fréquence.|
+## Description de l'interface
+
+La programmation a été réalisée avec l’IDE Arduino pour la partie en C++ de part l'utilisation de SPIFFS, qui permet l'intégration des fichier réalisé avec Netbeans (HTML,CSS,Javascript) dans la mémoire flash de l'ESP et qu'ils soient utilisable par le serveur web. La page web utilise du code JavaScript et dialogue automatiquement avec l’ESP32 assurant le rôle d’interface entre le smartphone et le récepteur SI4735. L’utilisateur ne dispose que d’une seule page web avec différents onglets.
+
+|  |  |
+|--|--|
+| ![](../img/copie_ecran_ssb/ssb_info_principal.jpg) |Dans la partie supérieure de l’IHM, on retrouve les informations principales :<br> - La fréquence ;<br> - Le rapport signal sur bruit (SNR) ;<br> - Le RSSI (Received Signal Strength Indicator) ;<br> - L’état de AGC on ou off ;<br> - Un « slider » pour le contrôle du volume ;<br><br>Juste en dessous, on dispose de trois listes déroulantes qui permettent de choisir le mode ( LSB, USB ), les différentes bandes (10m à 630m ), puis la bande passante en écoute BANDW ( 0,5 ; 1,0 ; 2,2 ; 3,0 ; 4,0 KHz ).<br><br>On retrouve ensuite 4 onglets spécifiques : L’onglet « FREQ » est composé d’un bouton rotatif qui rappelle celui présent dans tout récepteur conventionnel. Celui-ci permet d’incrémenter ou décrémenter la fréquence avec un pas que l’on peut sélectionner juste à côté dans la liste déroulante « STEP-FREQ » (1 kHz ; 5 kHz), le bouton « FREQ » permet de saisir directement la fréquence que l’on souhaite écouter.<br>L’onglet « BFO » possède les mêmes éléments que l’onglet « FREQ ». Cela permet de régler plus précisément la fréquence en fonction du pas choisi via la sélection de « STEP-BFO » (1 Hz; 5 Hz ; 10 Hz ; 25 Hz). Le bouton « Reset » permet de réinitialiser le réglage du BFO. <br>L’onglet « AGC » permet d’activer ou de désactiver le contrôle automatique de gain.<br>L’onglet « About » : Auteur du programme. |
+| ![](../img/copie_ecran_ssb/ssb_select_ham_mode.jpg) | ![](../img/copie_ecran_ssb/ssb_about.jpg) |
 
 ## Configuration de l'IDE Arduino pour l'ESP32
 
