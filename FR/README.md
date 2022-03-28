@@ -21,7 +21,7 @@
 
 ## Description de l'interface
 
-<br>La programmation a été réalisée avec l’IDE Arduino pour la partie en C++ de part l'utilisation de SPIFFS, qui permet l'intégration des fichier réalisé avec Netbeans (HTML,CSS,Javascript) dans la mémoire flash de l'ESP et qu'ils soient utilisable par le serveur web. La page web utilise du code JavaScript et dialogue automatiquement avec l’ESP32 assurant le rôle d’interface entre le smartphone et le récepteur SI4735. L’utilisateur ne dispose que d’une seule page web avec différents onglets.<br>
+<br>La programmation a été réalisée avec l’IDE Arduino pour la partie en C++ et avec Netbeans pour la partie web (HTML,CSS,Javascript). La page web utilise du code JavaScript et dialogue automatiquement avec l’ESP32 assurant le rôle d’interface entre le smartphone et le récepteur SI4735. L’utilisateur ne dispose que d’une seule page web avec différents onglets pour contrôler l'ESP.<br>
 
 |  |  |
 |--|--|
