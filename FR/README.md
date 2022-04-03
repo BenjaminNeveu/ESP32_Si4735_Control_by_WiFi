@@ -51,4 +51,4 @@ La mise en fonctionnement ce fait en plusieurs étapes:
 
 |  |  |
 |--|--|
-|Une fois le programme présent dans votre ESP32, il ne vous reste plus qu'a vous connecter au récepteur, pour cela il vous suffit d'allez dans vos <br>paramètres Wi-Fi et de sélectionner ``Récepteur SSB``. <br>(il n'y a pas de mots de passe)<br><br> Une fois connecté vous pouvez allez sur un navigateur web et écrire<br> dans la barre d'adresse ``192.168.4.1``(correspond a l'adresse IP par défaut de l'ESP) pour accéder à l'interface <br><br> ![](../img/image_readme/connection_recepteur.jpg)|![](../img/image_readme/parametre_wifi.jpg)|
+|Une fois le programme présent dans votre ESP32, il ne vous reste <br>plus qu'a vous connecter au récepteur, pour cela il vous suffit d'allez<br> dans vos paramètres Wi-Fi et de sélectionner ``Récepteur SSB``. <br>(il n'y a pas de mots de passe)<br><br> Une fois connecté vous pouvez allez sur un navigateur web et écrire<br> dans la barre d'adresse ``192.168.4.1``<br>(correspond a l'adresse IP par défaut de l'ESP) pour accéder à l'interface <br><br> ![](../img/image_readme/connection_recepteur.jpg)|![](../img/image_readme/parametre_wifi.jpg)|
