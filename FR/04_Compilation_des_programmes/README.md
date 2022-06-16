@@ -1,6 +1,6 @@
 # Compilation avec l'IDE Arduino 
 
-Pour commencer, téléchargé l'archive [softwares.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/softwares/softwares.zip) contenant tous les projet réalisé.
+Pour commencer, téléchargé l'archive [softwares.zip](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/raw/master/softwares/softwares.zip) contenant tous les projets réalisés.
 
 Une fois téléchargé veuillez extraire l'archive vers ``<home_dir>/Arduino``
 
@@ -10,7 +10,7 @@ Une fois téléchargé veuillez extraire l'archive vers ``<home_dir>/Arduino``
 
 ## Compilation de Format_SPIFFS 
 
-Il est conseiller de commencer par ce programme pour que l'IHM (Interface Homme Machine) fonctionne correctement, parce qu'il permet de formater la mémoire flash de L'ESP32.
+Il est conseillé de commencer par ce programme pour que l'IHM (Interface Homme Machine) fonctionne correctement, parce qu'il permet de formater la mémoire flash de L'ESP32.
 
 |  |  |
 |--|--|
@@ -20,7 +20,7 @@ Il est conseiller de commencer par ce programme pour que l'IHM (Interface Homme 
 |--|--|
 |Il vous reste plus qu'à téléverser ce programme sur l'ESP32. <br>Il est possible que le programme ne compile pas.<br> Si cela arrive il faut appuyer sur le bouton ``BOOT``<br> de votre ESP32 au moment du téléversement.|![](../../img/image_readme/televerser.png)|
 
-Une fois le programme téléversé, je vous conseille d'ouvrir le moniteur série en cliquant sur ``Outils`` puis sur ``Moniteur Série``, puis sur le bouton ``RST``(reset) de votre ESP32, pour vérifier que le formatage de la mémoire s'est réalisé correctement.
+Une fois le programme téléversé, je vous conseille d'ouvrir le moniteur série en cliquant sur ``Outils`` puis sur ``Moniteur série``, puis sur le bouton ``RST``(reset) de votre ESP32, pour vérifier que le formatage de la mémoire s'est réalisé correctement.
 
 |  |  |
 |--|--|
