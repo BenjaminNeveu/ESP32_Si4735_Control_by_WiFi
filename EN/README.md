@@ -1,4 +1,4 @@
-﻿# Récepteur SSB contrôlé par smartphone
+﻿# SSB receiver controlled by smartphone
 Student in IT at Touchard Washington high school in Le Mans, I carried out an internship of 6 weeks at the radio club F6KFI of Le Mans. My internship subject was to program a man-machine interface of an SSB receiver with the SI4735 integrated circuit as a base.
 
  1. [Presentation](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN#Presentation)
