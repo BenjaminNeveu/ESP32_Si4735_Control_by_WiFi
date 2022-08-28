@@ -1,8 +1,10 @@
+#ESP32_Si4735_Control_by_WiFi
+
 [README FR](/FR#récepteur-ssb-contrôlé-par-smartphone)
 
-# Presentation
+## Presentation
 
-<br>The objective of my project is simple, to control the receiver with a smartphone rather than a touch LCD display. For this, I designed a HMI (Human Machine Interface) with a Wi-Fi access point and a web page. It would have been possible to make an Android application. However, the use of a web server directly integrated in the ESP32 microcontroller allows a more versatile use of different brands of smartphones.<br>
+<br>The objective of my project (ESP32_Si4735_Control_by_WiFi) is simple, to control the receiver with a smartphone rather than a touch LCD display. For this, I designed a HMI (Human Machine Interface) with a Wi-Fi access point and a web page. It would have been possible to make an Android application. However, the use of a web server directly integrated in the ESP32 microcontroller allows a more versatile use of different brands of smartphones.<br>
 
 |  |  |
 |--|--|
