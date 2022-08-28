@@ -1,4 +1,4 @@
-#ESP32_Si4735_Control_by_WiFi
+# ESP32_Si4735_Control_by_WiFi
 
 [README FR](/FR#récepteur-ssb-contrôlé-par-smartphone)
 
