@@ -43,7 +43,7 @@ During this project I used the SPIFFS tool, the main advantage of having used th
 ## Start-up procedure
 
  1. [Configuration of the Arduino IDE for the ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/01_Configuration_Arduino_IDE)
- 2. [Installation of libraries](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/02_Installation_of_libraries)  
+ 2. [Installation of libraries](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/02_Installation_of_librairies)  
  3. [Installation of SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/03_Installation_of_SPIFFS)
  4. [Compilation of programs](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/04_Compilation_of_programs)
 
