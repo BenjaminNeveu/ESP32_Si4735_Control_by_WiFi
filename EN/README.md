@@ -42,6 +42,8 @@ During this project I used the SPIFFS tool, the main advantage of having used th
 
 ## Start-up procedure
 
+For this project it is necessary to install Arduino version 1.X. (Doesn't work with version 2.X because it does not support external tools/plugins)
+
  1. [Configuration of the Arduino IDE for the ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/01_Configuration_Arduino_IDE)
  2. [Installation of libraries](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/02_Installation_of_librairies)  
  3. [Installation of SPIFFS](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/EN/03_Installation_of_SPIFFS)

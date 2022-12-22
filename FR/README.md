@@ -42,6 +42,8 @@ Lors de ce projet j'ai utilisé l'outil SPIFFS, le principal avantage d'avoir ut
 
 ## Procédure de mise en fonctionnement
 
+Pour ce projet il est nécessaire d'installer Arduino version 1.X. (Ne fonctionne pas avec la version 2.X car celle-ci ne gère pas les outils/plugins externes)
+
 La mise en fonctionnement ce fait en plusieurs étapes:
 
  1. [Configuration de l'IDE Arduino pour l'ESP32](https://github.com/BenjaminNeveu/ESP32_Si4735_Control_by_WiFi/tree/master/FR/01_Configuration_IDE_Arduino)
