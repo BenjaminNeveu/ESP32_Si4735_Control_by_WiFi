@@ -8,6 +8,28 @@ Once downloaded please extract the archive to ``<home_dir>/Arduino``
 |--|--|
 | Here are the contents of the ``Arduino`` folder if you haven't<br> made any other programs before | ![](../../img/image_readme/contenu_arduino.png) |
 
+Here is the file tree obtained after all the steps have been completed:
+
+```
+[<home_dir>/Arduino]
+              |
+              |----[librairies]
+              |         |
+              |         |--------[AsyncTCP]
+              |         |--------[ESPAsyncWebServer]
+              |         |--------[PU2CLR_SI4735]
+              |
+              |----[softwares]
+              |         |
+              |         |--------[ESP32_Broadcast]
+              |         |--------[ESP32_SSB]
+              |         |--------[Format_SPIFFS]
+              |
+              |----[tools]
+                        |
+                        |--------[ESP32FS]
+```
+
 ## Compilation of Format_SPIFFS 
 
 It is recommended to start with this program so that the HMI (Human Machine Interface) works correctly, because it allows to format the flash memory of the ESP32.

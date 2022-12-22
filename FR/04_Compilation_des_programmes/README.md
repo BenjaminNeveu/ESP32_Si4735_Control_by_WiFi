@@ -8,6 +8,28 @@ Une fois téléchargé veuillez extraire l'archive vers ``<home_dir>/Arduino``
 |--|--|
 | Voici le contenu du dossier ``Arduino`` si vous n'avez<br> pas fait d'autres programmes auparavant | ![](../../img/image_readme/contenu_arduino.png) |
 
+Voici l'arborescence de fichier obtenue une fois toutes les étapes réalisées :
+
+```
+[<home_dir>/Arduino]
+              |
+              |----[librairies]
+              |         |
+              |         |--------[AsyncTCP]
+              |         |--------[ESPAsyncWebServer]
+              |         |--------[PU2CLR_SI4735]
+              |
+              |----[softwares]
+              |         |
+              |         |--------[ESP32_Broadcast]
+              |         |--------[ESP32_SSB]
+              |         |--------[Format_SPIFFS]
+              |
+              |----[tools]
+                        |
+                        |--------[ESP32FS]
+```
+
 ## Compilation de Format_SPIFFS 
 
 Il est conseillé de commencer par ce programme pour que l'IHM (Interface Homme Machine) fonctionne correctement, parce qu'il permet de formater la mémoire flash de L'ESP32.
